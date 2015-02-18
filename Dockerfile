@@ -1,6 +1,12 @@
 FROM debian:testing
 MAINTAINER devel@olbat.net
 
+# Add debian sources repository to the /etc/apt/sources.list file
+RUN sed -i \
+  '/testing[[:space:]]\+main[[:space:]]*$/\
+  {p; s/^\([[:space:]]*\)deb\([[:space:]]\+.*\)$/\1deb-src\2/}' \
+  /etc/apt/sources.list
+
 # Install debian development and packaging tools
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y \
