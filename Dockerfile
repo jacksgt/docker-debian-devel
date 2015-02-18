@@ -31,12 +31,12 @@ RUN useradd \
 # Disable sudo password checking for users of the sudo group
 RUN sed -i '/%sudo[[:space:]]/ s/ALL[[:space:]]*$/NOPASSWD:ALL/' /etc/sudoers
 
-# Display a warning if the the DEBFULLNAME or DEBMAIL variables
+# Display a warning if the the DEBFULLNAME or DEBEMAIL variables
 # were not overridden at launch time
 RUN /bin/echo -e \
-  '[ "$DEBMAIL" == "user@domaim.tld" -o "$DEBFULLNAME" == "Debian" ] \\\n'\
+  '[ "$DEBEMAIL" == "user@domaim.tld" -o "$DEBFULLNAME" == "Debian" ] \\\n'\
   '  && echo "WARNING: please do not forget to customize" \\\n'\
-  '    "DEBFULLNAME and DEBMAIL env variables"' \
+  '    "DEBFULLNAME and DEBEMAIL env vars"' \
   >> /home/debian/.bashrc
 
 # Clean image
@@ -45,7 +45,7 @@ RUN rm -rf /var/lib/apt/lists/* && mkdir /var/lib/apt/lists/partial
 
 # Setup environment
 ENV DEBFULLNAME Debian
-ENV DEBMAIL user@domain.tld
+ENV DEBEMAIL user@domain.tld
 USER debian
 WORKDIR /home/debian
 
