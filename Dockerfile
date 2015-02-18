@@ -19,6 +19,7 @@ RUN useradd \
   --groups=sudo \
   --create-home \
   --home-dir=/home/debian \
+  --password=debian \
   --shell=/bin/bash \
   debian
 
