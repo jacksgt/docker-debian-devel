@@ -19,9 +19,11 @@ RUN useradd \
   --groups=sudo \
   --create-home \
   --home-dir=/home/debian \
-  --password=debian \
   --shell=/bin/bash \
   debian
+
+# Disable sudo password checking for users of the sudo group
+RUN sed -i '/%sudo[[:space:]]/ s/ALL[[:space:]]*$/NOPASSWD:ALL/' /etc/sudoers
 
 # Display a warning if the the DEBFULLNAME or DEBMAIL variables
 # were not overridden at launch time
