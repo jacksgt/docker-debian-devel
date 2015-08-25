@@ -17,3 +17,4 @@ _Note:_ don't forget to customize `DEBFULLNAME` and `DEBMAIL` environment variab
 * equivs
 * lintian
 * quilt
+* nvi

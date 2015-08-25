@@ -18,7 +18,8 @@ RUN apt-get update \
     dpatch \
     equivs \
     lintian \
-    quilt
+    quilt \
+    nvi
 
 # Add debian user
 RUN useradd \
