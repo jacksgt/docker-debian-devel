@@ -20,7 +20,15 @@ RUN apt-get update \
     equivs \
     lintian \
     quilt \
-    nvi
+    nvi \
+    git-buildpackage \
+    pristine-tar \
+    dh-make \
+    dh-make-perl \
+    python3-stdeb \
+    gem2deb \
+    npm2deb
+
 
 # Add debian user
 RUN useradd \
