@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM debian:stable
 MAINTAINER devel@olbat.net
 
 # Add debian sources repository to the /etc/apt/sources.list file
