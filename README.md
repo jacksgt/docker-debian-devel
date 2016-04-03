@@ -11,6 +11,7 @@ _Note:_ don't forget to customize `DEBFULLNAME` and `DEBMAIL` environment variab
 ### Included packages
 * build-essential
 * debhelper
+* dh-systemd
 * devscripts
 * fakeroot
 * dpatch

@@ -13,6 +13,7 @@ RUN apt-get update \
     sudo \
     build-essential \
     debhelper \
+    dh-systemd \
     devscripts \
     fakeroot \
     dpatch \
