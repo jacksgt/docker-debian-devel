@@ -20,7 +20,10 @@ RUN apt-get update \
     equivs \
     lintian \
     quilt \
-    nvi
+    nvi \
+    git-buildpackage \
+    pristine-tar
+
 
 # Add debian user
 RUN useradd \

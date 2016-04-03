@@ -19,3 +19,5 @@ _Note:_ don't forget to customize `DEBFULLNAME` and `DEBEMAIL` environment varia
 * lintian
 * quilt
 * nvi
+* git-buildpackage
+* pristine-tar
