@@ -22,7 +22,14 @@ RUN apt-get update \
     quilt \
     nvi \
     git-buildpackage \
-    pristine-tar
+    pristine-tar \
+    dh-make \
+    dh-make-golang \
+    dh-make-perl \
+    python3-stdeb \
+    pypi2deb \
+    gem2deb \
+    npm2deb
 
 
 # Add debian user

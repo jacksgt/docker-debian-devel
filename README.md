@@ -21,3 +21,10 @@ _Note:_ don't forget to customize `DEBFULLNAME` and `DEBEMAIL` environment varia
 * nvi
 * git-buildpackage
 * pristine-tar
+* dh-make
+* dh-make-golang
+* dh-make-perl
+* python3-stdeb
+* pypi2deb
+* gem2deb
+* npm2deb
