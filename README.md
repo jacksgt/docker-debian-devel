@@ -41,6 +41,7 @@ docker run -it --rm -v $(pwd):/src -w /src \
 * lintian
 * quilt
 * nvi
+* git
 * git-buildpackage
 * pristine-tar
 * dh-make

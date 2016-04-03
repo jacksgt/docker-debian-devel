@@ -21,6 +21,7 @@ RUN apt-get update \
     lintian \
     quilt \
     nvi \
+    git \
     git-buildpackage \
     pristine-tar \
     dh-make \
