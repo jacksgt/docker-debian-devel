@@ -30,7 +30,13 @@ RUN apt-get update \
     python3-stdeb \
     pypi2deb \
     gem2deb \
-    npm2deb
+    npm2deb \
+    make \
+    cmake \
+    automake \
+    autoconf \
+    rake \
+    node-jake
 
 
 # Add debian user
