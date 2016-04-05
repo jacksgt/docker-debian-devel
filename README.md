@@ -60,6 +60,7 @@ Build automation tools:
 * autoconf
 * rake
 * node-jake
+* help2man
 
 Source code management tools:
 * git
