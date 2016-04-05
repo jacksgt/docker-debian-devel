@@ -34,7 +34,8 @@ RUN apt-get update \
     automake \
     autoconf \
     rake \
-    node-jake
+    node-jake \
+    help2man
 
 
 # Add debian user
