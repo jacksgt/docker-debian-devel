@@ -31,6 +31,8 @@ docker run -it --rm -v $(pwd):/src -w /src \
 ```
 
 ### Included packages
+
+Debian packaging tools:
 * build-essential
 * debhelper
 * dh-systemd
@@ -41,11 +43,24 @@ docker run -it --rm -v $(pwd):/src -w /src \
 * lintian
 * quilt
 * nvi
-* git
-* git-buildpackage
-* pristine-tar
+
+Debian automatic packaging tools:
 * dh-make
 * dh-make-perl
 * python3-stdeb
 * gem2deb
 * npm2deb
+
+Build automation tools:
+* make
+* cmake
+* automake
+* autoconf
+* rake
+* node-jake
+
+Source code management tools:
+* git
+* git-buildpackage
+* pristine-tar
+* subversion

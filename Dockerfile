@@ -28,7 +28,13 @@ RUN apt-get update \
     dh-make-perl \
     python3-stdeb \
     gem2deb \
-    npm2deb
+    npm2deb \
+    make \
+    cmake \
+    automake \
+    autoconf \
+    rake \
+    node-jake
 
 
 # Add debian user
