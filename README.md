@@ -13,17 +13,17 @@ Run dch (in the current directory)
 ```bash
 docker run -it --rm -v $(pwd):/src -w /src \
   -e DEBFULLNAME='Name' -e DEBEMAIL='name@domain.tld' \
-  olbat/docker-debian-devel:stable dch -i
+  olbat/docker-debian-devel dch -i
 ```
 
-Run debuild
+Run debuild (testing)
 ```bash
 docker run -it --rm -v $(pwd):/src -w /src \
   -e DEBFULLNAME='Name' -e DEBEMAIL='name@domain.tld' \
-  olbat/docker-debian-devel:stable debuild -us -uc
+  olbat/docker-debian-devel:testing debuild -us -uc
 ```
 
-Open a shell
+Open a shell (stable)
 ```bash
 docker run -it --rm -v $(pwd):/src -w /src \
   -e DEBFULLNAME='Name' -e DEBEMAIL='name@domain.tld' \
